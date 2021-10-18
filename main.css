@@ -1,4 +1,4 @@
-body { background-color: #3f2860;
+body { background-color: fff;
     font-family: Verdana, Ariel, sans-serif;
     color: #572991;
 }
@@ -11,41 +11,71 @@ body { background-color: #3f2860;
     min-width: 50px;
     max-width: 1280px;
 }
-
-
-    .boxLong
-        {
-            height : 300px;
-            width : 100%;
-           
-           /* background-position: center;
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.boxLong {
+    height/**/ : 300px;
+    width : 100%;
+   /* background-position: center;
             position: relative;*/
-        }
+    }
         
-    .boxRight
+.boxRight
         {
-            height : 1500px;
+            height : 1230px;
             width : 25%;
             background-color: lightblue;
-            background-image: url("PIXNIO-1945524-1200x800.jpeg");
-            background-size: cover;
-            background-position: center;
             float: right;
         }
+
         
-    .boxLeft
+.boxLeft
         {
-            height : 1500px;
+            height : 1230px;
             width: 75%;
             background-color: #fff;
-            
             background-size: cover;
             background-position: center;
             float : left;
         }
-.img {width: 100%;}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 31%;
+  padding: 10px;
+  margin: 10px;
+}
+.column h1 {
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.column h2 {
+    font-size: 20px;
+    text-align: center;
+}
+.column p {
+    font-size: 18px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header { 
-    height: 250px;
+    height: 325px;
     background-color: palevioletred;
     text-align: center;
 }
@@ -53,16 +83,24 @@ header h2 {
     color: #ffffff;
     text-align: center;
 }
+hr {color: white;
+}
 header p {
     color: #ffffff;
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 2em;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
-
-main { padding: 0 3em 3em 3em;
+header h1 {
+    font-size: 75px;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+main { padding-top: 3em;
     display: block;
     margin-left: 0px;
 }
@@ -71,17 +109,40 @@ h1 {
     color: #ffffff;
     font-size: 50px;
 }
-h2{padding: 1em;
+h2 {padding: .5em;
+    padding-left: 10px;
 }
-p {font-size: 20px;}
-
-.floatleft { float: left;
-    margin-right: 2em;
+h3 {padding: .5em;
+    padding-left: 10px;
+    color: blue;
+}
+p {font-size: 20px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.floatleft { 
     width: 100%;
+    border: 5px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 95%;
+}
+img.floatright {
+    border-radius: 70%;
+    width: 50%;
+    float: center;
+    margin-top: 10px;
     }
-.floatright { float: right;
-    margin-left: 2em;
-    width: 32%;
+.floatright { 
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.boxRight h2 {
+    text-align: center;
+    font-size: 23px;
+}
+.boxright p {
+    margin-left: 30px;
 }
 .clear { clear: both; }
 footer {
@@ -90,6 +151,9 @@ footer {
     text-align: center;
     padding: 1em;
     color: #ffffff;
+    margin-left: 10px;
 }
+
+
 footer a {color: #ffffff;
 }
